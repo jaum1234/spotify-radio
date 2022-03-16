@@ -1,0 +1,25 @@
+{
+  "name": "spotifyradio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "set LOG_DISABLED=true & node --experimental-vm-modules node_modules/jest/bin/jest.js --no-cache ",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --no-cache --watchAll",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --no-cache --coverage tests/unit"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "devDependencies": {
+    "nodemon": "2"
+  },
+  "dependencies": {
+    "jest": "27",
+    "pino": "7.8.0",
+    "pino-pretty": "7.5.3"
+  }
+}
